@@ -1,0 +1,297 @@
+.carousel {
+  /*设置轮播容器为相对定位，作为后代元素标题文字、指示器和左右翻页的定位祖先元素*/
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  transition: .6s ease-in-out left;
+}
+
+.carousel-inner > .active {
+  display: block;
+  left: 0;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.carousel-inner > .item > a > img {
+  display: flex;
+  width: 1900px;
+  height: 700px;
+  line-height: 1;
+  vertical-align: middle;
+  border: 0;
+/*  position: absolute;
+  z-index: -1; */
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 40px;
+  left: 15%;
+  z-index: 10;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.carousel-indicators > li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #fff;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  width: 72px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.carousel-control.left {
+  left: 0;
+}
+
+.carousel-control.right {
+  right: 0;
+}
+
+.n_nav{
+    width: 600px;
+    height: 30px;
+    line-height: 40px;
+    background-color: rgb(255, 255, 255);
+	float:right;
+	position: absolute;
+	left: 70%;
+	top: 5%;
+}/* 对导航栏的整体样式进行设置 */
+.logo{
+	width: 50%;
+}
+.navi_bar ul li{
+    list-style: none;
+    float: left;
+}/* 删除列表的样式并设置浮动 */
+.navi_bar a{
+    color: black;
+    padding: 40px;
+    margin: 0px;
+    text-decoration: none;
+}/* 设置a标签的样式 */
+
+.nav1 {
+    position: relative;/* 设置相对定位 */
+    display: inline-block;/* 让元素具有块级元素和行内元素的特性,即将块级元素转化为内联元素 */
+}
+
+.nav2 {
+    display: none;/* 将某元素隐藏起来 */
+    position: absolute;/* 绝对定位 */
+    background-color: #f9f9f9;
+    min-width: 120px;/* 最小宽度 */
+	z-index: 10;
+}
+
+.nav2 a{
+    color: black;
+    padding: 20px 9px;
+    display: block;/* 将a标签设置为块级标签 */
+	width: 126px;
+	height: 7px;
+	line-height: 7px;
+	text-align: center;
+}
+
+.nav2 a:hover{
+    background-color: #da8181
+}/* 鼠标悬浮时的颜色 */
+
+.nav1:hover .nav2 {
+    display: block;
+}/* 鼠标悬浮在元素上时,变为块级标签 */
+
+.nav1:hover,.nav1:hover{
+    background-color: #12adb8;
+}
+.navi_bar img{
+	display: inline;
+	  margin-left: 5%;
+	  margin-right: auto;
+	  width: 100px; 
+	  height: 100px;
+	  float: left; 
+}
+.navi_bar h1,h4{
+	margin-left: 9%;
+}
+
+.title1{
+	padding: 30px;
+	text-align: center;
+}
+
+.left_con{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.left_con img{
+	width: 300px;
+	height: auto;
+}
+
+.right_con{
+	width: 50%;
+	float: right;
+	text-align: center;
+}
+
+.right_con img{
+	width: 700px;
+	height: auto;
+}
+
+.navi_bar h1{
+	font-family: 黑体;
+}
+
+.navi_bar h4{
+	font-style: italic;
+}
+
+
+* {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+ 
+        .box {
+            position: relative;
+            width: 1910px;
+            height: 750px;
+            left: 50%;
+			top: 50px;
+            transform: translateX(-50%);
+			
+ 
+        }
+ 
+        .box img {
+            width: 1910px;
+            height: 750px;
+        }
+ 
+        .box ul li {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            transition: 1s;
+        }
+ 
+        .box ul li:first-child {
+            opacity: 1;
+        }
+ 
+        .box ul {
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+ 
+        span {
+            width: 30px;
+            height: 70px;
+            font-size: 25px;
+            line-height: 75px;
+            display: block;
+            position: absolute;
+            color: black;
+            background-color: #ccc;
+            opacity: .5;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            display: none;
+        }
+ 
+        .right {
+            right: 0px;
+        }
+ 
+        .left {
+            left: 0px;
+        }
+ 
+        ol {
+            position: absolute;
+            left: 50%;
+            z-index: 999;
+            transform: translateX(-50%);
+            bottom: 5px;
+        }
+ 
+        .current {
+            float: left;
+            display: block;
+            width: 25px;
+            height: 5px;
+            background-color: rgb(41, 39, 39);
+            margin-right: 10px;
+            opacity: 0.5;
+        }
+ 
+        .white {
+            background-color: #fff;
+        }

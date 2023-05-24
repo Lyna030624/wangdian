@@ -1,0 +1,28 @@
+.banner img{
+	width: 100%;
+}
+
+.banner2{
+	text-align: center;
+	width: 45%;
+}
+
+.gong{
+	text-align: center;
+	margin-top: 2%;
+}
+.title{
+	width: 55%;
+	
+}
+
+.title p{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 3%;
+}
+
+.container1{
+	display: flex;
+	margin-top: 2%;
+}
